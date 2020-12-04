@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css?family=Auton|Gugi|Lato|Roboto|Sofia&display=swap');
+
+:root{
+    --primary-color:#101e27;
+    --light-gray:#2b3032a1; 
+    --Border:#b8280f18;
+    --text-color:#526fa5;
+    --roboto:"Roboto",sans-serif;
+    --gugi:"Gugi", cursive;
+    --sofia:"Sofia", cursive;
+}
+.primary-color{
+    color:var(--primary-color)
+}
+.gb-primary-color{
+    background-color: var(--primary-color)!important;
+}
+.text-color{
+    color:var(--text-color);
+}
+.font-roboto{
+    font-family:var(--roboto);
+}
+.lightgray{
+    color:lightgrey;
+    
+}
+
+header{
+    background-color: var(--primary-color);
+    font-family: var(--roboto);
+    
+}
+header.site-title{
+  
+    font-family:var(--gugi);
+}
+.container.dropdown-toggle,.container.dropdown-item{
+    font-size: 0.7em;
+   
+}
+
+.header-links a{
+    font-size: 0.9;
+    text-decoration:none;
+    color: white;
+}
+
+  .navbar-nav{
+      padding:0.6em 0em;
+  }
+  navbar-nav.nav-link{
+      font-size: 0.9em;
+      color: var(--light-gray)!important;
+  }
+  .navbar-nav .nav-item .nav-link{
+      padding: 0.6em;
+  }
+
+  .login{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ input[type=text],input[type="password"]{
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+
+ }
+ button{
+     background-color:red ;
+     color: white;
+     padding: 14px 20px;
+     margin: 8px 0;
+     border: none;
+     cursor: pointer;
+     width: 100%;
+
+ }
+ button:hover{
+    opacity: 0.8;
+ }
+ .loginIMCO{
+     text-align: center;
+     margin: 24px 0 12px 0;
+     position: relative;
+ }
+ img.user{
+     width: 12%;
+     border-radius: 40%;
+ }
+.model{
+    
+    overflow: auto;
+    padding-top: 130px;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    position: fixed;
+}
+.model-content{
+    background-color: white;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+.zone{
+    padding: 40px;
+}
+span.psw{
+    float: right;
+    padding-top: 16px;
+}
+
+  
