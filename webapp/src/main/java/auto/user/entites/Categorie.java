@@ -9,7 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.OneToMany;
-import javax.validation.constraints.Size;
+//import javax.validation.constraints.Size;
 
 //import org.hibernate.validator.constraints.NotEmpty;
 @Entity
@@ -18,9 +18,9 @@ public class Categorie implements Serializable {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long idcategorie;
 	//@NotEmpty
-	@Size(min=4,max=20)
+	//@Size(min=4,max=20)
 	private String nomCategorie;
-	@Size(min=8)
+	//@Size(min=8)
 	private String description;
 	@Lob
 	private byte[] photo;

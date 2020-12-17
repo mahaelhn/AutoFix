@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import javax.validation.constraints.Size;
+//import javax.validation.constraints.Size;
 //import org.hibernate.validator.constraints.NotEmpty;
 @Entity
 @Table(name="produits")
@@ -18,7 +18,7 @@ public class Produit implements Serializable {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
   private Long idProduit;
 	//@NotEmpty
-	@Size(min=4,max=15)
+	//@Size(min=4,max=15)
   private String designation;
   private String description;
   private double prix;

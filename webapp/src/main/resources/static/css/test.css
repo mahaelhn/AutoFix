@@ -1,102 +1,117 @@
-
 @import url('https://fonts.googleapis.com/css?family=Auton|Gugi|Lato|Roboto|Sofia&display=swap');
 
-:root{
-    --primary-color:#101e27;
-    --light-gray:#2b3032a1; 
-    --Border:#b8280f18;
-    --text-color:#526fa5;
-    --roboto:"Roboto",sans-serif;
-    --gugi:"Gugi", cursive;
-    --sofia:"Sofia", cursive;
-}
-.primary-color{
-    color:var(--primary-color)
-}
-.gb-primary-color{
-    background-color: var(--primary-color)!important;
-}
-.text-color{
-    color:var(--text-color);
-}
-.font-roboto{
-    font-family:var(--roboto);
-}
-.lightgray{
-    color:lightgrey;
-    
+:root {
+    --primary-color: #101e27;
+    --light-gray: #2b3032a1;
+    --Border: #b8280f18;
+    --text-color: #526fa5;
+    --roboto: "Roboto", sans-serif;
+    --gugi: "Gugi", cursive;
+    --sofia: "Sofia", cursive;
 }
 
-header{
+.primary-color {
+    color: var(--primary-color)
+}
+
+.gb-primary-color {
+    background-color: var(--primary-color) !important;
+}
+
+.text-color {
+    color: var(--text-color);
+}
+
+.font-roboto {
+    font-family: var(--roboto);
+}
+
+.lightgray {
+    color: lightgrey;
+
+}
+
+header {
     background-color: var(--primary-color);
     font-family: var(--roboto);
-    
-}
-header.site-title{
-  
-    font-family:var(--gugi);
-}
-.container.dropdown-toggle,.container.dropdown-item{
-    font-size: 0.7em;
-   
+
 }
 
-.header-links a{
+header.site-title {
+
+    font-family: var(--gugi);
+}
+
+.container.dropdown-toggle,
+.container.dropdown-item {
+    font-size: 0.7em;
+
+}
+
+.header-links a {
     font-size: 0.9;
-    text-decoration:none;
+    text-decoration: none;
     color: white;
 }
 
-  .navbar-nav{
-      padding:0.6em 0em;
-  }
-  navbar-nav.nav-link{
-      font-size: 0.9em;
-      color: var(--light-gray)!important;
-  }
-  .navbar-nav .nav-item .nav-link{
-      padding: 0.6em;
-  }
+.navbar-nav {
+    padding: 0.6em 0em;
+}
 
-  .site-slider{
-      position: relative;
-  }
-  .position-top{
-      position:absolute;
-      top:45%
-  }
-  .site-slider.slider-btn.prev,
-  .site-slider.slider-btn.next{
-      background-color:var(--primary-color);
-      padding: 1rem 1.5rem;
-      color:white;
-      border-radius:10 rem;
-      margin: 0 1 rem;
-      opacity: 0;
-      transition: opacity 1s ease;
-  }
-  .site-slider:hover.slider-btn.prev,
-  .site-slider:hover.slider-btn.next{
-      opacity: 1;
-  }
-  .right-0{
-      right:0;
-  }
- 
-  .slick-dots{
-      display: flex;
-      justify-content: center;
-      margin:0;
-      padding:1rem 0;
-      list-style-type: none;
-      position: absolute;
-      bottom: 0;
-      right:50%;
-  }
-  .slick-dots li{
+navbar-nav.nav-link {
+    font-size: 0.9em;
+    color: var(--light-gray) !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 0.6em;
+}
+
+.site-slider {
+    position: relative;
+}
+
+.position-top {
+    position: absolute;
+    top: 45%
+}
+
+.site-slider.slider-btn.prev,
+.site-slider.slider-btn.next {
+    background-color: var(--primary-color);
+    padding: 1rem 1.5rem;
+    color: white;
+    border-radius: 10 rem;
+    margin: 0 1 rem;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.site-slider:hover.slider-btn.prev,
+.site-slider:hover.slider-btn.next {
+    opacity: 1;
+}
+
+.right-0 {
+    right: 0;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+.slick-dots li {
     margin: 0 0.6rem;
 }
-.slick-dots button{
+
+.slick-dots button {
     display: block;
     width: 0.5rem;
     height: 0.5rem;
@@ -106,32 +121,119 @@ header.site-title{
     text-indent: 350px;
     border-radius: 100%;
 }
-.slick-dots li.slick-active button{
+
+.slick-dots li.slick-active button {
     transform: scale(2.5);
-    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.3);
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.3);
 }
+
 /* CSS Document */
 
-.bg-black{ background-color: rgba(14,14,14,1.00)}
+.bg-black {
+    background-color: rgba(14, 14, 14, 1.00)
+}
 
-.carousel-caption{ top:200px}
+.carousel-caption {
+    top: 200px
+}
 
-.bg-orange{background-color:#f0644f; color: aliceblue; font-weight: 600; text-align: center;}
-.m-right{border: 2px solid #f0644f; border-right: 2px solid white;}
+.bg-orange {
+    background-color: #f0644f;
+    color: aliceblue;
+    font-weight: 600;
+    text-align: center;
+}
 
-.underline{width: 100px; height: 2px; background-color: orangered;}
+.m-right {
+    border: 2px solid #f0644f;
+    border-right: 2px solid white;
+}
 
-.card{border: none;}
-.bg-light-gray{background-color: rgba(111,111,111,0.09)}
+.underline {
+    width: 100px;
+    height: 2px;
+    background-color: orangered;
+}
 
-.media img{ max-width: 120px; height: auto;}
+.card {
+    border: none;
+}
 
-.underline-green{width: 70px; height: 2px; background-color: lawngreen;}
-.underline-blue{width: 70px; height: 2px; background-color: mediumblue;}
-.underline-black{width: 70px; height: 2px; background-color: black;}
+.bg-light-gray {
+    background-color: rgba(111, 111, 111, 0.09)
+}
 
-.card-body{text-align: center;}
+.media img {
+    max-width: 120px;
+    height: auto;
+}
 
-.blog .media img{ max-width: 200px; height: auto;}
+.underline-green {
+    width: 70px;
+    height: 2px;
+    background-color: lawngreen;
+}
 
-footer ul{text-decoration: none; list-style-type: none;}
+.underline-blue {
+    width: 70px;
+    height: 2px;
+    background-color: mediumblue;
+}
+
+.underline-black {
+    width: 70px;
+    height: 2px;
+    background-color: black;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.blog .media img {
+    max-width: 200px;
+    height: auto;
+}
+
+footer {
+    background-color: blue;
+    background: rgba(0, 0, 0, 0.815);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+}
+
+footer p>span {
+    color: #ff512f;
+}
+
+footer input {
+    border: none !important;
+}
+
+footer input::placeholder {
+    color: white !important;
+}
+
+footer .input-group .input-group-text {
+    background: var(--bggradient);
+    border: none;
+}
+
+footer .column i {
+    color: #dd2476;
+}
+
+/* It is Adjacent sibling combinator */
+
+footer .column i+i {
+    padding: 0 0.5em;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.815);
+    z-index: 9999;
+    transition: all 1.5s ease;
+}

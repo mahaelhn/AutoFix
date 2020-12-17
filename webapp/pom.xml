@@ -23,22 +23,17 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
        
-       <!-- https://mvnrepository.com/artifact/javax.validation/validation-api -->
-       <dependency>
-           <groupId>javax.validation</groupId>
-           <artifactId>validation-api</artifactId>
-           <version>1.0.0.GA</version>
-        </dependency>
-        
     	<dependency>
    			 <groupId>commons-io</groupId>
     		<artifactId>commons-io</artifactId>
@@ -51,16 +46,60 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+		
+		<!-- JSTL tag lib -->
+		<dependency>
+		    <groupId>javax.servlet.jsp.jstl</groupId>
+    		<artifactId>javax.servlet.jsp.jstl-api</artifactId>
+    		<version>1.2.1</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>taglibs</groupId>
+    		<artifactId>standard</artifactId>
+    		<version>1.1.2</version>
+		</dependency>
+		
+		<!-- Tomcat for JSP rendering -->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!--Tiles-->
+		<dependency>
+		    <groupId>org.apache.tiles</groupId>
+    		<artifactId>tiles-servlet</artifactId>
+    		<version>3.0.8</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.scala-lang</groupId>
+    		<artifactId>scala-library</artifactId>
+    		<version>2.11.0</version>
+		</dependency>
+		
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		
+		
+		     <!-- Hibernate -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+        </dependency>
+
+        
 	</dependencies>
 
 	<build>
