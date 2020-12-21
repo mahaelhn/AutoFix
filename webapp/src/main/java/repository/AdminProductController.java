@@ -8,13 +8,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.validation.java;
+import javax.validation.*;
 
 import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -26,7 +27,6 @@ import service.CategoryService;
 import service.ProductService;
 
 @Controller
-@RequestMapping("/Admin/Product")
 public class AdminProductController {
 
     private Path path;
@@ -37,6 +37,7 @@ public class AdminProductController {
     @Autowired
     private CategoryService categoryService;
 
+    @GetMapping("/Admin/Product")
     public void setEditProduct(Produit product, Model model){
     	model.addAttribute("categoryList", categoryService.getAllCategory()); 
         model.addAttribute("product", product);

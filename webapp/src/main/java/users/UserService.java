@@ -32,6 +32,15 @@ public class UserService {
 		
 		userRepository.save(user);
 	}
+	
+	public boolean verifylogin(User user)
+	{
+		//get user infos and check if exist in database
+		//User found = UserRepository.findByUsernameAndPassword(user.getUsername);
+		//if found != null user in found on the database
+		return true;
+		//else return false
+	}
 
 }
 

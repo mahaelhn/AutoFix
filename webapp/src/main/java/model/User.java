@@ -14,11 +14,12 @@ import javax.persistence.Table;
 @Entity
 @Table(name="users")
 public class User implements Serializable {
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)	
-	@Column(name="user_id")
+  @Id
+  @GeneratedValue(strategy=GenerationType.IDENTITY)	
+  @Column(name="user_id")
   private Long idUser;
-	@Column(name="user_name")
+	
+  @Column(name="user_name")
   private String userName;
   private String password;
   private boolean actived;
