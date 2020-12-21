@@ -6,6 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.*;
@@ -99,7 +100,7 @@ public class AdminProductController {
 
         if (productImage != null && !productImage.isEmpty()) {
             try {
-                productImage.transferTo(new File(path.toString()));
+                productImage.transform((Function<? super String, ? extends R>) new File(path.toString()));
             } catch (Exception e) {
                 e.printStackTrace();
                 throw new RuntimeException("Product image saving failed", e);
